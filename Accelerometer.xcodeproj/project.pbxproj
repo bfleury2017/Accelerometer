@@ -14,6 +14,8 @@
 		D34D98921E820C2200AC1753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34D98901E820C2200AC1753 /* LaunchScreen.storyboard */; };
 		D34D989D1E820C2200AC1753 /* AccelerometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D989C1E820C2200AC1753 /* AccelerometerTests.swift */; };
 		D34D98A81E820C2200AC1753 /* AccelerometerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34D98A71E820C2200AC1753 /* AccelerometerUITests.swift */; };
+		D37C02E21E8221DA003BAF3D /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C02E11E8221DA003BAF3D /* SoundPlayer.swift */; };
+		D3BE558F1E8215AF00F9B6F8 /* RickRoll.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D3BE558E1E8215AF00F9B6F8 /* RickRoll.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D34D98A31E820C2200AC1753 /* AccelerometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelerometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34D98A71E820C2200AC1753 /* AccelerometerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerUITests.swift; sourceTree = "<group>"; };
 		D34D98A91E820C2200AC1753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D37C02E11E8221DA003BAF3D /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		D3BE558E1E8215AF00F9B6F8 /* RickRoll.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = RickRoll.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,9 @@
 		D34D98861E820C2200AC1753 /* Accelerometer */ = {
 			isa = PBXGroup;
 			children = (
+				D3BE558E1E8215AF00F9B6F8 /* RickRoll.m4a */,
 				D34D98871E820C2200AC1753 /* AppDelegate.swift */,
+				D37C02E11E8221DA003BAF3D /* SoundPlayer.swift */,
 				D34D98891E820C2200AC1753 /* ViewController.swift */,
 				D34D988B1E820C2200AC1753 /* Main.storyboard */,
 				D34D988E1E820C2200AC1753 /* Assets.xcassets */,
@@ -195,6 +201,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = HH67VPFP9E;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					D34D98971E820C2200AC1753 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -237,6 +248,7 @@
 			files = (
 				D34D98921E820C2200AC1753 /* LaunchScreen.storyboard in Resources */,
 				D34D988F1E820C2200AC1753 /* Assets.xcassets in Resources */,
+				D3BE558F1E8215AF00F9B6F8 /* RickRoll.m4a in Resources */,
 				D34D988D1E820C2200AC1753 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D34D988A1E820C2200AC1753 /* ViewController.swift in Sources */,
+				D37C02E21E8221DA003BAF3D /* SoundPlayer.swift in Sources */,
 				D34D98881E820C2200AC1753 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +527,7 @@
 				D34D98AE1E820C2200AC1753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D34D98AF1E820C2200AC1753 /* Build configuration list for PBXNativeTarget "AccelerometerTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +536,7 @@
 				D34D98B11E820C2200AC1753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D34D98B21E820C2200AC1753 /* Build configuration list for PBXNativeTarget "AccelerometerUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +545,7 @@
 				D34D98B41E820C2200AC1753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
