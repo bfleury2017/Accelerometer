@@ -19,7 +19,9 @@ class SoundPlayer {
     
     var error:NSError?
     var player = AVAudioPlayer()
-    let soundURL = Bundle.main.url(forResource: "RickRoll", withExtension: "m4a")!
+    let soundURL = Bundle.main.url(forResource: "Scream", withExtension: "mp3")!
+//    let soundURL = Bundle.main.url(forResource: "RickRoll", withExtension: "m4a")!
+
     
     init() {
         do {
