@@ -7,7 +7,7 @@
 //
 
 import AVFoundation
-
+import MediaPlayer
 class SoundPlayer {
     
     class var sharedInstance : SoundPlayer {
@@ -25,8 +25,10 @@ class SoundPlayer {
     
     init() {
         do {
+//            (MPVolumeView().subviews.filter{NSStringFromClass($0.classForCoder) == "MPVolumeSlider"}.first as? UISlider)?.setvalue(1, animated: false)
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
             try AVAudioSession.sharedInstance().setActive(true)
+//            try AVAudioSession.sharedInstance().overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
             player = try AVAudioPlayer(contentsOf: soundURL)
 
         } catch let error as NSError {
@@ -36,6 +38,8 @@ class SoundPlayer {
     }
     
     func playSound() {
+
+//        player.volume = 1.0
         player.play()
     }
 }
